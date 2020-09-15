@@ -1,0 +1,11 @@
+.headBanner {
+  border: none;
+}
+
+.bRound {
+  border-radius: 25px;
+}
+
+.readBtn {
+  background-color: red;
+}
