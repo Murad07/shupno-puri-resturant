@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../../images/logo2.png';
 import './Header.css';
 import banner from '../../images/bannerbackground.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -12,12 +13,12 @@ const Header = () => {
         </a>
 
         <div>
-          <a href='' className='text-dark btn'>
+          <a href='/login' className='text-dark btn'>
             Login
           </a>
-          <button type='button' className='btn btn-danger my-2 mr-sm-0'>
+          <a href='/sign-up' className='btn btn-danger my-2 mr-sm-0'>
             Sign Up
-          </button>
+          </a>
         </div>
       </nav>
 
@@ -52,15 +53,15 @@ const Header = () => {
       {/* Banner End */}
 
       <div className='d-flex justify-content-center'>
-        <a href='' className='text-dark btn'>
+        <Link to='/breakfast' className='text-dark btn'>
           Brakfast
-        </a>
-        <a href='' className='text-dark btn'>
+        </Link>
+        <Link to='/lunch' className='text-dark btn'>
           Lunch
-        </a>
-        <a href='' className='text-dark btn'>
+        </Link>
+        <Link to='/dinner' className='text-dark btn'>
           Dinner
-        </a>
+        </Link>
       </div>
 
       {/* last div */}
